@@ -1,0 +1,68 @@
+<div class="container">
+    <h1>CONTACT</h1>
+
+    <div class="col-md-5 lets-talk">
+        <span>let's talk</span>
+    </div>
+    <div class="col-md-7 contact-form">
+        <div class="col-md-7">
+            <form>
+                <label>name:
+                    <input type="text" name="name" ng-model="contact.name"  class="form-control">
+                </label>
+                <label>last name:
+                    <input type="text" name="l_name" ng-model="contact.l_name" class="form-control">
+                </label>
+                <label>email:
+                    <input type="email" name="email" ng-model="contact.email"  class="form-control">
+                </label>
+                <label>phone:
+                    <input type="number" name="phone" ng-model="contact.phone"  class="form-control">
+                </label>
+                <label>message:
+                    <textarea class="form-control" name="message" ng-model="contact.message" ></textarea>
+                </label>
+
+                <button class="btn btn-danger" ng-click="submitForm()">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-md-5 social">
+            <a href="http://facebook.com/flzozaya" target="_new">
+                <i class="zmdi zmdi-facebook-box"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/flzozaya" target="_new">
+                <i class="zmdi zmdi-linkedin-box"></i>
+            </a>
+            <a href="https://github.com/flzozaya" target="_new">
+                <i class="zmdi zmdi-github"></i>
+            </a>
+            <a href="mailto:lorenzo@zozaya.io" target="_new">
+                <i class="zmdi zmdi-email"></i>
+            </a>
+            <a href="tel:+1-754-200-1851" target="_new">
+                <i class="zmdi zmdi-phone-in-talk"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #menu-button {
+		background-color: #fff !important;
+        color: #E54329 !important;
+    }
+    .nav-container:hover {
+        background-color: rgba(255,255,255,0.9) !important;
+    }
+    .nav-container:hover  #menu-button {
+        background-color: #E54329 !important;
+        color: #fff !important;
+    }
+    #logo {
+    	background-image: url(../assets/img/logo-white.png) !important; 
+    }
+    .nav-container:hover #logo {
+    	background-image: url(../assets/img/logo.png) !important; 
+    }
+</style>
