@@ -40,7 +40,7 @@ body {
 			// background-repeat: no-repeat;
 		}
 		.page-home { 
-			height: 82%;
+			height: 100%;
 			background-image: url(../img/gradient-bg.png);
 			background-position: center;
 			background-repeat: no-repeat;
@@ -246,6 +246,7 @@ body {
 					min-height: 34px;
 					background-image: url(../img/logo.png); 
 					background-size: cover;
+					background-repeat: no-repeat;
 				}
 
 				#menu-button {
@@ -256,6 +257,11 @@ body {
 					width: 65px;
 					float: left;
 					cursor: pointer;
+					-webkit-transition: all 500ms ease-in-out;
+						-moz-transition: all 500ms ease-in-out;
+						-ms-transition: all 500ms ease-in-out;
+						-o-transition: all 500ms ease-in-out;
+						transition: all 500ms ease-in-out;
 				}
 
 			ul {
@@ -356,11 +362,137 @@ body {
 		}
 	}
 	@media only screen and (max-width: 600px){
-		#wrapper .page-contact .contact-form {
-			padding-left: 1%;
-			padding-right: 1%; 
+		.nav-container {
+			opacity: 1;
+			background-color: rgba(255,255,255,.97) !important;
 
+				nav {
+				padding-right: 0 !important;
+				padding-left: 0 !important;	
+
+					#menu-button {
+						float: right;
+						font-size: 1.9em;
+						padding: 4px 0px 2px 0px;
+						text-align: center;
+						width: 1.8em;
+						-webkit-transition: all 500ms ease-in-out;
+						-moz-transition: all 500ms ease-in-out;
+						-ms-transition: all 500ms ease-in-out;
+						-o-transition: all 500ms ease-in-out;
+						transition: all 500ms ease-in-out;
+				}
+					#logo {
+						background-size: 90% !important;
+						margin-right: 20px !important;
+						margin-left: 5px !important;			
+						margin-top: 6px !important;
+				}
+					ul {
+						float: none;
+						line-height: 3.1em;
+						margin-left: auto;
+						margin-right: auto;
+						width: 70%;
+						text-align: center;
+				}
+			}
+		}
+		#wrapper {
+
+			.page {
+				padding-top: 2.5em;
+
+				h1 {
+					font-size: 1.5em;
+				}
+			}
+			.page-contact .contact-form {
+				padding-left: 1%;
+				padding-right: 1%; 
+			}
+		}
+	}
+
+	@media only screen and (max-width: 530px){
+		
+		.protfolio-container {
+
+			position: relative;
+    		top: -5em;
+
+			.slide__title {
+				padding: 0 .9em !important;
+				margin-top: -15px;
+			}
+
+			.slider {
+				height: 480px;
+			}
+
+			.zoomer {
+    			height: 300px;
 			
+				.zoomer__image.macbook {
+					width: 314px !important;
+				}
+
+				.zoomer__image.iMac {
+					width: 294px !important;
+				}
+				.zoomer__area {
+					top:50% !important;
+						height: 115px;
+				}
+			}
+			.preview {
+				top:42%;
+
+				&.preview-macbook {
+					top:43.5%;
+				}	
+
+				&.preview-iMac img {
+					width: 266px !important;
+				}
+
+				&.preview-macbook img {
+					width: 226px !important;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 450px){
+		
+		.protfolio-container {
+
+			.zoomer {
+    			height: 345px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 320px){
+		
+		.protfolio-container {
+    		top: -4em;
+
+			.slider {
+				height: 445px;
+			}
+			
+			.zoomer {
+    			height: 300px;
+			}			
+			.preview {
+				top:41%;
+
+				&.preview-macbook {
+					top:42.5%;
+				}	
+
+			}
 		}
 	}
 }
