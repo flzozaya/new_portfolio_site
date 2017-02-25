@@ -1,13 +1,24 @@
 @import url(variables.less);
 @import url(page-animations.less);
 
+
+/*
+	<script>
+  $(window).on("resize", function(){
+    var winHeight = $(window).height();
+    //adjust elements css etc.....
+    $(".page").css('height', winHeight);
+});   
+</script>
+*/
 * {
 	padding:0;
 	margin: 0;
 }
 
 html { 
-	overflow-y:hidden; 
+	// overflow-y:hidden;
+	overflow-y:scroll; 
 	height: 100%; //maybe	
 }
 body {
@@ -32,7 +43,7 @@ body {
 			position:absolute; 
 			top:0;  
 			width:100%; 
-			overflow: scroll;
+			//overflow: scroll;
 			padding-bottom: 50px;
 			background-color: @drkgrey;
 			// background-image: url(../img/gradient-bg.png);
@@ -414,7 +425,7 @@ body {
 		}
 	}
 
-	@media only screen and (max-width: 530px){
+	@media only screen and (max-width: 680px){
 		
 		.protfolio-container {
 
@@ -463,6 +474,57 @@ body {
 		}
 	}
 
+@media only screen and (max-width: 530px){
+		
+		.protfolio-container {
+
+			position: relative;
+    		top: -5em;
+
+			.slide__title {
+				padding: 0 .9em !important;
+				margin-top: -19px;
+				span {
+					display: none;
+				}
+			}
+
+			.slider {
+				height: 480px;
+			}
+
+			.zoomer {
+    			height: 300px;
+			
+				.zoomer__image.macbook {
+					width: 314px !important;
+				}
+
+				.zoomer__image.iMac {
+					width: 254px !important;
+				}
+				.zoomer__area {
+					top:50% !important;
+						height: 115px;
+				}
+			}
+			.preview {
+				top:42%;
+
+				&.preview-macbook {
+					top:43.5%;
+				}	
+
+				&.preview-iMac img {
+					width: 229px !important;
+				}
+
+				&.preview-macbook img {
+					width: 226px !important;
+				}
+			}
+		}
+	}
 	@media only screen and (max-width: 450px){
 		
 		.protfolio-container {
@@ -476,17 +538,17 @@ body {
 	@media only screen and (max-width: 320px){
 		
 		.protfolio-container {
-    		top: -4em;
+    		top: -5.2em;
 
 			.slider {
-				height: 445px;
+				height: 413px;
 			}
 			
 			.zoomer {
-    			height: 300px;
+    			height: 290px;
 			}			
 			.preview {
-				top:41%;
+				top:42%;
 
 				&.preview-macbook {
 					top:42.5%;
