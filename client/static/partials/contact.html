@@ -83,7 +83,21 @@
         #logo {
             background-image: url(../assets/img/logo.png) !important; 
         }
-        
-
     }
 </style>
+<script>
+    $(document).ready(function(){
+
+        $(window).on("load", function(){
+			var winHeight = $(".container").height();
+		//    $("#wrapper").css('height', winHeight);
+			console.log(winHeight);
+		});   
+
+		// $(window).on("load", function(){
+		//     var winHeight = $(window).height();
+		//    $(".page").css('height': winHeight);
+		// }); 
+    });
+		
+</script>

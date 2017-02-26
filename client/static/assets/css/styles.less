@@ -17,8 +17,8 @@
 }
 
 html { 
-	// overflow-y:hidden;
-	overflow-y:scroll; 
+	overflow-y:hidden;
+	// overflow-y:scroll; 
 	height: 100%; //maybe	
 }
 body {
@@ -43,7 +43,7 @@ body {
 			position:absolute; 
 			top:0;  
 			width:100%; 
-			//overflow: scroll;
+			overflow: scroll;
 			padding-bottom: 50px;
 			background-color: @drkgrey;
 			// background-image: url(../img/gradient-bg.png);
@@ -78,7 +78,8 @@ body {
 				p {
 					font-size: 1.3em;
 					text-transform: lowercase;
-					opacity: 0.8;
+					font-weight: 100;
+					
 
 					&.social {
 						margin-top: 30px;
@@ -123,7 +124,7 @@ body {
 		// .page-work 	{ background:@white; color:#a55400; }
 		.page-contact 	{ 
 			background:@red; 
-	        background-image: url(http://zozayacreative.com/images/redOrange_stripe.png);
+	        background-image: url(../img/redOrange_stripe.png);
 
 			h1 {
 				color: @altwhite;
@@ -427,6 +428,9 @@ body {
 
 	@media only screen and (max-width: 680px){
 		
+		.page-contact {
+			padding-bottom: 2em;
+		}
 		.protfolio-container {
 
 			position: relative;
@@ -476,6 +480,10 @@ body {
 
 @media only screen and (max-width: 530px){
 		
+		.page-home header {
+			height: auto !important;
+			margin-top: 120px !important;
+		}
 		.protfolio-container {
 
 			position: relative;
