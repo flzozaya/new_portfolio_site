@@ -19,7 +19,7 @@ module.exports =  {
         // setup email data with unicode symbols
             let mailOptions = {
                 from: 'zozaya.io Contact Form' + ' <hello@zozaya.io>', // sender address
-                to: '<freddy@zozayacreative.com>', // recipient
+                to: 'freddy@zozayacreative.com', // recipient
                 subject: 'Message from '+ req.body.name + ' ' + req.body.l_name, // Subject line
                 html: '<h2>Message Received</h2><p><strong>From: </strong>' + req.body.name + ' ' + req.body.l_name + '</p><p><strong>Email: </strong>' + req.body.email + '</p><p><strong>Phone Number: </strong>' + req.body.phone + '</p><p><strong>Message: </strong>' + req.body.message + '</p>'
                 
