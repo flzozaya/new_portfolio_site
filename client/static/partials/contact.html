@@ -7,7 +7,7 @@
     <div class="col-md-7 contact-form">
         <div class="col-md-7">
             <form>
-                <label>name:
+                <label>first name:
                     <input type="text" name="name" ng-model="contact.name"  class="form-control">
                 </label>
                 <label>last name:
@@ -52,8 +52,13 @@
 		background-color: #fff !important;
         color: #E54329 !important;
     }
+    .nav-container {
+        background:#E54329; 
+	    background-image: url(../assets/img/redOrange_stripe.png);
+        opacity: 1 !important;
+    }
     .nav-container:hover {
-        background-color: rgba(255,255,255,0.9) !important;
+        background-color: rgba(255,255,255,0.97) !important;
     }
     .nav-container:hover  #menu-button {
         background-color: #E54329 !important;
@@ -68,7 +73,15 @@
      .page-contact, html, body {
          overflow: visible !important;
      }
-
+    @media only screen and (max-width: 992px){
+        body {
+            background:#E54329; 
+	        background-image: url(../assets/img/redOrange_stripe.png);
+        }
+        .page-contact .container {
+			padding-bottom: 4em;
+		}
+    }
     @media only screen and (max-width: 600px){
         
         #menu-button {
@@ -85,26 +98,5 @@
         #logo {
             background-image: url(../assets/img/logo.png) !important; 
         }
-
-        .page-contact .container {
-            background:#E54329; 
-	        background-image: url(../assets/img/redOrange_stripe.png);
-        }
     }
 </style>
-<script>
-    $(document).ready(function(){
-
-        $(window).on("load", function(){
-			var winHeight = $(".container").height();
-		//    $("#wrapper").css('height', winHeight);
-			console.log(winHeight);
-		});   
-
-		// $(window).on("load", function(){
-		//     var winHeight = $(window).height();
-		//    $(".page").css('height': winHeight);
-		// }); 
-    });
-		
-</script>

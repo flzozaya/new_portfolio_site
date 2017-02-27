@@ -1,16 +1,6 @@
 @import url(variables.less);
 @import url(page-animations.less);
 
-
-/*
-	<script>
-  $(window).on("resize", function(){
-    var winHeight = $(window).height();
-    //adjust elements css etc.....
-    $(".page").css('height', winHeight);
-});   
-</script>
-*/
 * {
 	padding:0;
 	margin: 0;
@@ -121,8 +111,16 @@ body {
 				}
 			}
 		}
-		// .page-work 	{ background:@white; color:#a55400; }
+		.page-work 	{ 
+			padding: 0 !important;
+			
+			.page-work-heading {
+				margin-top: 65px;
+			}
+		}
 		.page-contact { 
+			background:#E54329; 
+	        background-image: url(../img/redOrange_stripe.png);
 
 			h1 {
 				color: @altwhite;
@@ -160,7 +158,7 @@ body {
 				input, textarea {
 					border-color: @altwhite;
 					background: fade(@red, 95%); 
-					background-image: url(http://zozayacreative.com/images/redOrange_stripe.png);
+					background-image: url(../img/redOrange_stripe.png);
 					text-align: left;
 					color: @white;
 					font-weight: 400;
@@ -426,9 +424,7 @@ body {
 
 	@media only screen and (max-width: 680px){
 		
-		.page-contact .container {
-			padding-bottom: 4em;
-		}
+		
 		.protfolio-container {
 
 			position: relative;
