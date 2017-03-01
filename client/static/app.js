@@ -17,6 +17,10 @@ var app = angular.module('app', ['ngRoute', 'ngAnimate']);
         .when('/confirmation',{
             templateUrl: 'partials/confirmation.html',
             controller: 'confirmationController'
+        }) 
+        .when('/resume',{
+            templateUrl: 'partials/resume.html',
+            controller: 'resume'
         })      
         .otherwise({
           redirectTo: '/'
