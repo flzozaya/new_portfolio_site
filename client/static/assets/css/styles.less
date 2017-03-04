@@ -199,7 +199,7 @@ body {
 			}
 			
 			.page-work-heading {
-				margin-top: 35px;
+				margin-top: 65px;
 			}
 		}
 		.page-contact { 
@@ -356,23 +356,35 @@ body {
 						transition: all 500ms ease-in-out;
 				}
 
-			ul {
-				list-style-type: none;
-				float: left;
-				margin-left:50px;
-				line-height: 63px;
-				margin-bottom: 0 !important;
-				opacity: 0;
-				
-				li {
-					a {
-						display: inline-block;
-						margin-right: 20px;
-						color: @red;
-						text-decoration: none;
-						text-transform: uppercase;
+				ul {
+					list-style-type: none;
+					float: left;
+					margin-left:40px;
+					line-height: 63px;
+					margin-bottom: 0 !important;
+					opacity: 0;
+
+					#menu-close-button {
+						position: absolute;
+						padding: 0 1.1rem;
+						right: 0;
+						top:0;
+						font-size: 2.5rem;
+						color: fade(@drkgrey, 30%);
+						line-height: 5.5rem;
 					}
-				}
+				
+					li {
+							display: inline-block;
+						
+						a {
+							display: block;	
+							padding: 0 10px;					
+							color: @red;
+							text-decoration: none;
+							text-transform: uppercase;
+						}
+					}
 			}
 		}
 		&:hover {
@@ -485,13 +497,27 @@ body {
 						margin-left: 5px !important;			
 						margin-top: 6px !important;
 				}
-					ul {
-						float: none;
-						line-height: 3.1em;
+					
+					ul.mobile-menu {
+						// float: none;
+						// line-height: 3.1em;
 						margin-left: auto;
 						margin-right: auto;
-						width: 70%;
+						width: 100%;
 						text-align: center;
+						background-color: @white;
+						position: absolute;
+						display: none; 
+						padding-top: 100px;
+
+						li {
+							display: block;
+							border-bottom: 1px solid #eee;
+
+							&:nth-child(2) {
+								border-top: 1px solid #eee;								
+							}
+						}
 				}
 			}
 		}
@@ -507,6 +533,10 @@ body {
 			.page-contact .contact-form {
 				padding-left: 1%;
 				padding-right: 1%; 
+			}
+
+			.page-work-heading {
+				margin-top: 35px !important;
 			}
 		}
 	}
