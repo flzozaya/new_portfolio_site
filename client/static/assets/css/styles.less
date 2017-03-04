@@ -199,7 +199,7 @@ body {
 			}
 			
 			.page-work-heading {
-				margin-top: 65px;
+				margin-top: 35px;
 			}
 		}
 		.page-contact { 
@@ -532,7 +532,7 @@ body {
 			position: relative;
     		// top: -5em;
 			h1 {
-				margin-bottom: -20px;
+				margin-bottom: -25px;
 			}
 			.slide__title {
 				padding: 0 .9em !important;
@@ -583,13 +583,19 @@ body {
 			margin-top: 80px !important;
 		}
 		.protfolio-container {
-
 			position: relative;
-    		top: -2em;
+    		// top: -2em;
+
+			.button--close {
+			    top: 5px !important;
+    			right: 24px !important;
+				font-size: 2.35em !important;
+				color: rgba(255, 255, 255, 0.9);
+			}
 
 			.slide__title {
 				padding: 0 .9em !important;
-				margin-top: -19px;
+				margin-top: -25px;
 				span {
 					display: none;
 				}
@@ -609,6 +615,12 @@ body {
 				.zoomer__image.iMac {
 					width: 254px !important;
 				}
+
+				.zoomer__image.iphone {
+				    width: 300px !important;
+    				margin-top: 30px;
+				}
+
 				.zoomer__area {
 					top:50% !important;
 						height: 115px;
@@ -619,6 +631,14 @@ body {
 
 				&.preview-macbook {
 					top:43.5%;
+				}
+
+				&.preview-iphone {
+					top:46%;
+						
+				}
+				&.preview-iphone img {
+					width: 80px !important;
 				}	
 
 				&.preview-iMac img {
@@ -647,10 +667,13 @@ body {
 	@media only screen and (max-width: 320px){
 		
 		.protfolio-container {
-    		// top: -5.2em;
 
 			.slider {
-				height: 398px;
+				height: 385px;
+
+				.slide__title {
+					font-size: 1.4em;
+				}
 			}
 			
 			.zoomer {
