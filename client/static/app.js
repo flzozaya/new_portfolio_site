@@ -4,7 +4,7 @@ var app = angular.module('app', ['ngRoute', 'ngAnimate']);
       $routeProvider
         .when('/',{
             templateUrl: 'partials/homepage.html',
-            controller: 'mainController'
+            controller: 'mainController',
         })
         .when('/work',{
             templateUrl: 'partials/work.html',

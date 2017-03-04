@@ -16,8 +16,13 @@
 		background-color: #fff !important;
         color: #E54329 !important;
     }
+    .nav-container {
+        background:#E54329; 
+	    background-image: url(../assets/img/redOrange_stripe.png);
+        opacity: 1 !important;
+    }
     .nav-container:hover {
-        background-color: rgba(255,255,255,0.9) !important;
+        background-color: rgba(255,255,255,0.97) !important;
     }
     .nav-container:hover  #menu-button {
         background-color: #E54329 !important;
@@ -28,5 +33,34 @@
     }
     .nav-container:hover #logo {
     	background-image: url(../assets/img/logo.png) !important; 
+    }
+     .page-contact, html, body {
+         overflow: visible !important;
+     }
+    @media only screen and (max-width: 992px){
+        body {
+            background:#E54329; 
+	        background-image: url(../assets/img/redOrange_stripe.png);
+        }
+        .page-contact .container {
+			padding-bottom: 4em;
+		}
+    }
+    @media only screen and (max-width: 600px){
+        
+        #menu-button {
+		background-color: #E54329 !important;
+        color: #fff !important;
+        }
+        .nav-container:hover {
+            background-color: #fff !important;
+        }
+        .nav-container:hover  #menu-button {
+            background-color: #E54329 !important;
+            color: #fff !important;
+        }
+        #logo {
+            background-image: url(../assets/img/logo.png) !important; 
+        }
     }
 </style>

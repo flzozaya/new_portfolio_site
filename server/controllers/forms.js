@@ -1,14 +1,15 @@
 
 console.log('forms node-controller');
+var env = require('../../.env.js');
 
 const nodemailer = require('nodemailer');
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: env.SMTP_SERVICE,
     auth: {
-        user: 'USER_ID',
-        pass: 'USER_KEY'
+        user: env.SMPT_LOGIN,
+        pass: env.SMPT_PAS
     }
 });
 
