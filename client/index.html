@@ -76,7 +76,7 @@
 
 		<script>
 			$(window).on("load && resize", function(){
-				var mobileHeight = window.innerHeight;
+				var mobileHeight = window.outerHeight;
 					// console.log(mobileHeight);
 					if(window.innerWidth <= 600) {
 						$('.nav-container ul').addClass('mobile-menu');
@@ -84,6 +84,9 @@
 
 						$('.nav-container #menu-button').click(function(){
 							$('.nav-container ul.mobile-menu').fadeIn();
+							// console.log(window.innerWidth);
+							// console.log(window.outerHeight);
+							
 						});
 						$('.nav-container ul.mobile-menu li a, #menu-close-button').click(function(){
 							$('.nav-container ul.mobile-menu').fadeOut();
