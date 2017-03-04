@@ -76,7 +76,7 @@
 
 		<script>
 			$(window).on("load && resize", function(){
-				var mobileHeight = $(window).height();
+				var mobileHeight = $(window).height() + 50;
 					// console.log(mobileHeight);
 					if(window.innerWidth <= 600) {
 						$('.nav-container ul').addClass('mobile-menu');
