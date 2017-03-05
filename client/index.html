@@ -80,18 +80,18 @@
 					// console.log(mobileHeight);
 					if(window.innerWidth <= 600) {
 						$('.nav-container ul').addClass('mobile-menu');
-						$('.nav-container ul.mobile-menu').css('height', mobileHeight + 50);
+						$('.nav-container ul.mobile-menu').css({'height': mobileHeight, "display": "none"});
 
 						$('.nav-container #menu-button').click(function(){
-							$('.nav-container ul.mobile-menu').fadeIn();
+							$('.nav-container ul.mobile-menu, #menu-close-button').fadeIn();
 						});
 						$('.nav-container ul.mobile-menu li a, #menu-close-button').click(function(){
-							$('.nav-container ul.mobile-menu').fadeOut();
+							$('.nav-container ul.mobile-menu, #menu-close-button').fadeOut();
 						});
 					} else if(window.innerWidth > 600) {
 						$('.nav-container ul').removeClass('mobile-menu');
-						$('.nav-container ul').css('height', "");
-						$('.nav-container ul.mobile-menu').fadeOut();
+						$('.nav-container ul').css({'height': "", "display": "block"});
+						$('.nav-container ul.mobile-menu, #menu-close-button').fadeOut();
 					}
 			});
 		</script>
