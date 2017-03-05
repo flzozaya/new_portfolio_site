@@ -80,12 +80,12 @@
 					// console.log(mobileHeight);
 					if(window.innerWidth <= 600) {
 						$('.nav-container ul').addClass('mobile-menu');
-						$('.nav-container ul.mobile-menu').css('height', mobileHeight);
+						$('.nav-container ul.mobile-menu').css('height', mobileHeight + 50);
 
 						$('.nav-container #menu-button').click(function(){
 							$('.nav-container ul.mobile-menu').fadeIn();
 							// console.log(window.innerWidth);
-							// console.log(window.outerHeight);
+							// console.log(mobileHeight + 50);
 							
 						});
 						$('.nav-container ul.mobile-menu li a, #menu-close-button').click(function(){
