@@ -8,12 +8,5 @@ app.controller('contactController', ['$scope', 'formFactory', '$location', funct
         $scope.contact = {};
     }
 
-    // if($location.url() == '/confirmation') {
-    //     setTimeout(function(){
-    //         console.log('take me to /contact');
-    //         $location.url('/contact');
-    //     }, 5000);
-    // }    
-
 	
 }]);

@@ -163,3 +163,14 @@
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/dynamics.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    $('button.button--zoom').click(function(){
+        $('.preview').css("background", "#E54329");
+    });
+
+    $('button.button--close').click(function(){
+        setTimeout(function(){
+            $('.preview').css("background", "#272727");
+        }, 1050);
+    });
+</script>
