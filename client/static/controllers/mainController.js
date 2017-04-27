@@ -4,5 +4,7 @@ app.controller('mainController', ['$scope', '$location', '$anchorScroll', 'ancho
     
     $scope.goToAboutSection = function (eID) {
         anchorSmoothScroll.scrollTo('scrollHelper');
+   		$('#about-scroll').fadeOut(1500);		
+
     }
 }]);

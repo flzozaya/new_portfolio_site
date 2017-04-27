@@ -3,6 +3,7 @@
 @red: #E54329;
 @white: #ffffff;
 @ltegrey: #dfdfdf;
+@drkltegrey: #8f8f8f;
 @drkgrey: #272727;
 @altwhite: fade(@white, 90%);
 
@@ -15,4 +16,27 @@
 
 
 
-	
+.transition(@transition){
+    -webkit-transition: all @transition ease-in-out;
+    -moz-transition: all @transition ease-in-out;
+    -ms-transition: all @transition ease-in-out;
+    -o-transition: all @transition ease-in-out;
+    transition: all @transition ease-in-out;
+}
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
+.whiteButton(){
+    display: inline-block;
+    margin: 20px auto !important;
+    color: @red;
+    padding: 7px 16px;
+    border-radius: 6px 0 6px 0;
+    font-weight: 300;
+	background-color: fade(@white, 80%);
+    text-decoration: none;
+}
