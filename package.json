@@ -1,24 +1,29 @@
 {
-  "name": "Portfolio",
+  "name": "new-portfolio",
+  "repository": "https://github.com/flzozaya/new_portfolio_site.git",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simplistic new portfolio site, built with Angular & Node.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.10.0",
+    "npm": "3.10.10"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.6.2",
-    "angular-animate": "^1.6.2",
-    "angular-route": "^1.6.2",
-    "body-parser": "^1.16.1",
-    "bootstrap": "^3.3.7",
-    "express": "^4.14.0",
-    "less": "^2.7.2",
-    "nodemailer": "^3.1.3",
-    "oclazyload": "^1.1.0",
-    "path": "^0.12.7"
+    "angular": "1.6.2",
+    "angular-animate": "1.6.2",
+    "angular-route": "1.6.2",
+    "body-parser": "1.16.1",
+    "bootstrap": "3.3.7",
+    "express": "4.14.0",
+    "less": "2.7.2",
+    "nodemailer": "3.1.3",
+    "oclazyload": "1.1.0",
+    "path": "0.12.7"
   }
 }

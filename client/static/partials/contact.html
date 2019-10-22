@@ -7,23 +7,28 @@
     <div class="col-md-7 contact-form">
         <div class="col-md-7">
             <form>
-                <label>first name:
-                    <input type="text" name="name" ng-model="contact.name"  class="form-control">
+                <label>
+                    first name:
+                    <input type="text" name="name" ng-model="contact.name" class="form-control" />
                 </label>
-                <label>last name:
-                    <input type="text" name="l_name" ng-model="contact.l_name" class="form-control">
+                <label>
+                    last name:
+                    <input type="text" name="l_name" ng-model="contact.l_name" class="form-control" />
                 </label>
-                <label>email:
-                    <input type="email" name="email" ng-model="contact.email"  class="form-control">
+                <label>
+                    email:
+                    <input type="email" name="email" ng-model="contact.email" class="form-control" />
                 </label>
-                <label>phone:
-                    <input type="number" name="phone" ng-model="contact.phone"  class="form-control">
+                <label>
+                    phone:
+                    <input type="number" name="phone" ng-model="contact.phone" class="form-control" />
                 </label>
-                <label>message:
-                    <textarea class="form-control" name="message" ng-model="contact.message" ></textarea>
+                <label>
+                    message:
+                    <textarea class="form-control" name="message" ng-model="contact.message"></textarea>
                 </label>
 
-                <button class="btn btn-danger" ng-click="submitForm()">Submit</button>
+                <button class="btn submit-button" ng-click="submitForm()">Submit</button>
             </form>
         </div>
 
@@ -48,55 +53,18 @@
 </div>
 
 <style>
-    #menu-button {
-		background-color: #fff !important;
-        color: #E54329 !important;
+    .page-contact,
+    html,
+    body {
+        overflow: visible !important;
     }
-    .nav-container {
-        background:#E54329; 
-	    background-image: url(../assets/img/redOrange_stripe.png);
-        opacity: 1 !important;
-    }
-    .nav-container:hover {
-        background-color: rgba(255,255,255,0.97) !important;
-    }
-    .nav-container:hover  #menu-button {
-        background-color: #E54329 !important;
-        color: #fff !important;
-    }
-    #logo {
-    	background-image: url(../assets/img/logo-white.png) !important; 
-    }
-    .nav-container:hover #logo {
-    	background-image: url(../assets/img/logo.png) !important; 
-    }
-     .page-contact, html, body {
-         overflow: visible !important;
-     }
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         body {
-            background:#E54329; 
-	        background-image: url(../assets/img/redOrange_stripe.png);
+            background: #e54329;
+            background-image: url(../assets/img/redOrange_stripe.png);
         }
         .page-contact .container {
-			padding-bottom: 4em;
-		}
-    }
-    @media only screen and (max-width: 600px){
-        
-        #menu-button {
-		background-color: #E54329 !important;
-        color: #fff !important;
-        }
-        .nav-container:hover {
-            background-color: #fff !important;
-        }
-        .nav-container:hover  #menu-button {
-            background-color: #E54329 !important;
-            color: #fff !important;
-        }
-        #logo {
-            background-image: url(../assets/img/logo.png) !important; 
+            padding-bottom: 4em;
         }
     }
 </style>
