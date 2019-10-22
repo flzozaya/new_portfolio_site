@@ -1,6 +1,6 @@
 
 console.log('forms node-controller');
-var env = require('../../.env.js');
+var env = process.env;
 
 const nodemailer = require('nodemailer');
 
