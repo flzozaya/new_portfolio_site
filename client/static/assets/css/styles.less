@@ -199,10 +199,6 @@ body {
 
 			a.click-to-see-cta {
 				.whiteButton();
-							
-				&:hover {
-					background-color: @white;
-				}
 			}
 			
 			.page-work-heading {
@@ -210,8 +206,7 @@ body {
 			}
 		}
 		.page-contact { 
-			background:@red; 
-	        background-image: url(../img/redOrange_stripe.png);
+			background: @white; 
 
 			h1 {
 				color: @altwhite;
@@ -224,32 +219,33 @@ body {
 				transform: rotate(-90deg);
 				display: inline-block;
 				font-size: 9em;
-				font-weight: 100;
+				font-weight: 300;
 				font-style: italic;
-				color: fade(@white, 18%);
+				color: fade(@red, 5%);
 				margin-top: 160px;
 				position: relative;
-    			left: 20%;
+    			// left: 20% !important;
 				width: 540px;
 			}
 			.contact-form {
 				padding: 40px;
-				background-color: fade(@white, 85%);
+				background-color: @red;
+		        background-image: url(../img/redOrange_stripe.png);
 				border-radius: 3px;
 
 				.confirmation {
 					min-height: 494px;
-					color: @red;
+					color: @white;
 
 					h2 {
 						margin-top: 30%;
 						text-align: center;
+						font-weight: 100;
 					}
 				}
 				input, textarea {
-					border-color: @altwhite;
-					background: fade(@red, 95%); 
-					background-image: url(../img/redOrange_stripe.png);
+					border: none;
+					background: @white;
 					text-align: left;
 					color: @white;
 					font-weight: 200;
@@ -265,11 +261,10 @@ body {
 				label {
 					display: block;
 					margin-top: 12px;
-					color: @red;
-					font-weight: 400;
+					color: @white;
+					font-weight: 200;
 					font-size: 1.2em;
 				}
-
 
 				.social {
 					margin-top:35px;
@@ -281,24 +276,24 @@ body {
 					}
 				
 					.zmdi {
-					display: block !important;
-					color: @red;
-					font-size: 2.4em;
-					line-height: 1.5em;
-					text-align: center;
-					-webkit-transition: all 500ms ease-in-out;
-					-moz-transition: all 500ms ease-in-out;
-					-ms-transition: all 500ms ease-in-out;
-					-o-transition: all 500ms ease-in-out;
-					transition: all 500ms ease-in-out;
+						display: block !important;
+						color: @white;
+						font-size: 2.4rem;
+						line-height: 1.5em;
+						text-align: center;
+						-webkit-transition: all 500ms ease-in-out;
+						-moz-transition: all 500ms ease-in-out;
+						-ms-transition: all 500ms ease-in-out;
+						-o-transition: all 500ms ease-in-out;
+						transition: all 500ms ease-in-out;
 					
 						&:hover:before {
-							font-size: 0.45em;
+							font-size: 1.3rem;
 							margin-right: 20px;
 							line-height: 1.5em;
 							
 							position: relative;
-							top: -7px;
+							top: -4px;
 							font-family: 'Exo', sans-serif;
 							-webkit-transition: all 500ms ease-in-out;
 							-moz-transition: all 500ms ease-in-out;
@@ -324,14 +319,18 @@ body {
 						content:"+1-754-200-1851";
 					}
 				}
+
+				.submit-button {
+					.whiteButton();
+				}
 			}
 		}
 	}
 	.nav-container {
-			opacity: 0.75;
-			position: fixed;
-			width: 100%;
-			z-index: 1000;
+		opacity: 0.75;
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
 
 		nav {
 			width: 100%;
@@ -397,11 +396,11 @@ body {
 			}
 		}
 		&:hover {
-				opacity: 1;
-				// background-color: #252525;
-				.box-shadow(20px 20px 50px rgba(0,0,0,0.02));
-				.transition(270ms);
-			}
+			opacity: 1;
+			background-color: @white;
+			.box-shadow(20px 20px 50px rgba(0,0,0,0.02));
+			.transition(270ms);
+		}
 		&:hover ul {
 				opacity: 1;
 				// .transition(300ms);

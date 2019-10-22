@@ -30,13 +30,31 @@
 	box-shadow:         @string;
 }
 
-.whiteButton(){
+.button() {
     display: inline-block;
     margin: 20px auto !important;
-    color: @red;
     padding: 7px 16px;
     border-radius: 6px 0 6px 0;
     font-weight: 300;
-	background-color: fade(@white, 80%);
     text-decoration: none;
+}
+
+.whiteButton() {
+    .button();
+    color: @red;
+    background-color: fade(@white, 80%);
+    
+    &:hover {
+        background-color: @white;
+    }
+}
+
+.redButton() {
+    .button();
+    color: @white;
+    background-color: fade(@red, 80%);
+    
+    &:hover {
+        background-color: @red;
+    }
 }
