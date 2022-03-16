@@ -7,29 +7,23 @@ app.factory('webWorkFactory', ['$http', function($http){
             displayDevice: "iMac",
             deviceImage: "imac.png",
             contentPrevClass: 'preview-iMac',
-            contentPrevImage: 'emailApp-content-preview.jpg',
+            contentPrevImage: 'uproot-content-preview.jpg',
             contentPrevImageWidth: 405,
             contentPrevImageAlt: "iMac app preview",
             zoomerNum: 5,
-            slideTitleSpan: "Full MEAN JS Development",
-            slideTitle: "eMail Blast Deployment App in Full MEAN",
+            slideTitleSpan: "Web & Native Mobile App Development",
+            slideTitle: "Uproot",
 
             // SLIDER //
-            contentImage: "emailApp-content.jpg",
+            contentImage: "uproot-content.jpg",
             contentImageAlt: "eMail Blast Deployment App Project in Full MEAN JavaScript",
-            contentH2: "eMail Blast Deployment App",
-            contentH3: "Web Application in Full MEAN JavaScript",
+            contentH2: "Uproot App",
+            contentH3: "Web & Native Mobile App Development",
             contentUL: [
-                    "Custom Email Deployment Platform built in full MEAN stack"
-                /*
-                    "",
-                    "",
-                    "",
-                    ""
-                */
-                    ],
-            contentCopy: "Technologies used: HTML, CSS3, LESS, BootStrap, JavaScript, Angular.js, Node.js, Express.js, MongoDB, JQuery, Responsive web design",
-            liveLinkURL: "http://ec2-35-160-7-62.us-west-2.compute.amazonaws.com/"
+                "Web and mobile app that builds meaningful data insights between local, state, and federal officials with issues pertaining to underserved communities. The app provides tools for political engagement around issues of racial justice, lgbtq rights, women's rights, criminal justice"
+            ],
+            contentCopy: "Technologies used: React, Ionic, Sass, Node, GraphQL, MongoDB",
+            liveLinkURL: "http://www.uproot.co/"
         },
         {
             // GRID //
@@ -56,7 +50,7 @@ app.factory('webWorkFactory', ['$http', function($http){
                     "Provided monthly scheduled website maintenance and updates",
                     "Integrated Wordpress blog while maintaining existing website layout and branding"
                     ],
-            contentCopy: "Technologies used: HTML5, CSS3, JavaScript, Jquery, Responsive web design, PHP, Wordpress, Web graphics with Adobe Illustrator and Photoshop image manipulation.",
+            contentCopy: "Technologies used: Node.js, Express.js, HTML5, CSS3, Jquery, Responsive web design, UX & Web Graphics Design.",
             liveLinkURL: "http://www.mybocasmile.com/"
         },
         {
@@ -82,8 +76,37 @@ app.factory('webWorkFactory', ['$http', function($http){
                     ],
             contentCopy: "Technologies used: HTML5, CSS3, JavaScript, Jquery, Responsive web design, Web graphics with Adobe Illustrator and Photoshop.",
             liveLinkURL: "http://m.mybocasmile.com/"
-        }
-        ];
+        },
+        {
+            // GRID //
+            contentNumber: 4,
+            displayDevice: "iMac",
+            deviceImage: "imac.png",
+            contentPrevClass: 'preview-iMac',
+            contentPrevImage: 'emailApp-content-preview.jpg',
+            contentPrevImageWidth: 405,
+            contentPrevImageAlt: "iMac app preview",
+            zoomerNum: 5,
+            slideTitleSpan: "Full MEAN JS Development",
+            slideTitle: "eMail Blast Deployment App in Full MEAN",
+
+            // SLIDER //
+            contentImage: "emailApp-content.jpg",
+            contentImageAlt: "eMail Blast Deployment App Project in Full MEAN JavaScript",
+            contentH2: "eMail Blast Deployment App",
+            contentH3: "Web Application in Full MEAN JavaScript",
+            contentUL: [
+                    "Custom Email Deployment Platform built in full MEAN stack"
+                /*
+                    "",
+                    "",
+                    "",
+                    ""
+                */
+                    ],
+            contentCopy: "Technologies used: HTML, CSS3, LESS, BootStrap, JavaScript, Angular.js, Node.js, Express.js, MongoDB, JQuery, Responsive web design",
+            liveLinkURL: "http://ec2-35-160-7-62.us-west-2.compute.amazonaws.com/"
+        }];
         /*  displayDevice: iMac, macbook, iphone
             deviceImage: imac, macbook, iphone
             contentPrevClass: preview-iMac, preview-macbook, preview-iphone
